@@ -29,8 +29,20 @@
   justify-content: center;
   background: #343434;
   border: 1px solid rgba(83, 83, 83, 0.2);
-  box-shadow: 10px 10px 24px 0 rgb(29, 29, 29),
-    -10px -10px 24px 0 rgba(105, 104, 104, 0.8);
+  box-shadow: -8px 8px 15px 0 rgb(29, 29, 29),
+    8px -8px 15px 0 rgba(119, 119, 119, 0.8);
+  border-radius: 12px;
+}
+
+.header-text-container-clicked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #343434;
+  border: 1px solid rgba(83, 83, 83, 0.2);
+  box-shadow: -8px 8px 15px 0 rgb(29, 29, 29) inset,
+    8px -8px 15px 0 rgba(119, 119, 119, 0.8) inset;
   border-radius: 12px;
 }
 
@@ -38,8 +50,27 @@
   font-family: "Century Gothic";
   margin-left: 40pt;
   margin-right: 40pt;
-  font-size: 30pt;
-  color: rgb(255, 255, 255);
+  font-size: 36pt;
+  color: #343434;
+  text-shadow: -2px 2px 5px rgb(11, 11, 11),
+    2px -2px 5px rgba(119, 119, 119, 0.8);
+  -webkit-text-stroke: 0.5px rgba(83, 83, 83, 0.2);
+}
+
+.header-text-clicked {
+  font-family: "Century Gothic";
+  margin-left: 40pt;
+  margin-right: 40pt;
+  font-size: 36pt;
+  color: #343434;
+  drop-shadow: 2px -2px 5px rgb(11, 11, 11),
+    -2px 2px 5px rgba(119, 119, 119, 0.8);
+  -webkit-text-stroke: 0.5px rgba(83, 83, 83, 0.2);
+}
+
+ion-icon {
+  font-size: 42px;
+  color: black;
 }
 
 /* @keyframes App-logo-spin {
