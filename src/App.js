@@ -3,9 +3,10 @@ import "./App.css";
 
 import "./fonts/CenturyGothic.ttf";
 import "./fonts/CenturyGothicBold.ttf";
-import { useState } from "react";
-import { NavigationButton } from "./components/NavigationButton";
+import React, { useState } from "react";
 import { ArtworkCard } from "./components/ArtworkCard";
+import { NavBar } from "./components/NavBar";
+import { Dropdown } from "./components/Dropdown";
 
 function App() {
   const [isClicked, setIsClicked] = useState("false");
@@ -17,19 +18,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <button
-          className={
-            isClicked
-              ? "header-text-container"
-              : "header-text-container-clicked"
-          }
-          onClick={toggleIsClicked}
-        >
+        <button className="button-container" onClick={toggleIsClicked}>
           <p className={isClicked ? "header-text" : "header-text-clicked"}>
             JOSEPH STALNAKER
           </p>
-        </button> */}
-        <ArtworkCard />
+        </button>
+        {/* <ArtworkCard /> */}
+        <NavBar />
       </header>
     </div>
   );
